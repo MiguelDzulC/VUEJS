@@ -1,8 +1,6 @@
 <template>
   <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
+
     <div class="details">
       <h3>
         <slot name="heading"></slot>
@@ -13,6 +11,9 @@
 </template>
 
 <style scoped>
+
+color: #000;
+
 .item {
   margin-top: 2rem;
   display: flex;
@@ -29,7 +30,6 @@ i {
   place-content: center;
   width: 32px;
   height: 32px;
-
   color: var(--color-text);
 }
 
@@ -37,7 +37,8 @@ h3 {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
-  color: var(--color-heading);
+  color: aqua;
+  
 }
 
 @media (min-width: 1024px) {
